@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 
-mongoose.connect('mongodb+srv://Gauravd:gauravd@cluster0.hbhwc24.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true });
+mongoose.connect('mongodb+srv://<username>:<password>@cluster0.hbhwc24.mongodb.net/?retryWrites=true&w=majority', { useNewUrlParser: true });
 
 const studentSchema = new mongoose.Schema({
     name: String,
